@@ -1,2 +1,2 @@
-# ctgi
+# CTGI
 Avaliação CTGI

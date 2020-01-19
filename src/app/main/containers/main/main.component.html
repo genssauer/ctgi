@@ -1,0 +1,22 @@
+<div class="ctgi-main-container">
+  <table matSort (matSortChange)="sortData($event)">
+    <tr>
+      <th mat-sort-header="fat">ID</th>
+      <th mat-sort-header="name">Nome</th>
+      <th mat-sort-header="description">Descrição</th>
+    </tr>
+
+    <tr *ngFor="let dessert of sortedData">
+      <td>{{dessert.id}}</td>
+      <td>{{dessert.name}}</td>
+      <td>{{dessert.description}}</td>
+    </tr>
+  </table>
+
+  <div class="result">
+    {{ result }}
+  </div>
+</div>
+<div class="ctgi-main-footer">
+  <button mat-raised-button color="primary" (click)="onClickProcess()">Processe</button>
+</div>
